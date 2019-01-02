@@ -283,6 +283,9 @@ hr {
   background: #f8f8f8;
 }
 
+.gold-bg{
+  background: rgba(253, 220, 0, .3);
+}
 .bg-white {
   background: #fff;
 }
@@ -588,7 +591,7 @@ hr {
   text-transform: uppercase;
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
-  color: #999;
+  color: #000;
   letter-spacing: 2.5px;
 }
 
