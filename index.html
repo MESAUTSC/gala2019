@@ -600,6 +600,18 @@ a.drk {
 		margin-right: auto;
 		width: 75%;
 	}
+	.navbar.navbar-default {
+    background-color: #99ccff;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+		.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 </style>
 
 </head>
@@ -627,7 +639,7 @@ a.drk {
 
         <!-- ========== Navigation ========== -->
 
-        <nav class="navbar navbar-default navbar-fixed-top trans-helper navbar-fw navbar-trans navbar-trans-dark" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top trans-helper navbar-fw navbar-trans navbar-trans-dark" role="navigation" style="background:transparent;">
 
 
           <div class="navbar-header page-scroll">
@@ -665,7 +677,7 @@ a.drk {
           <!-- Navbar Links -->
 
 
-          <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right" style="max-height: 771px;">
+          <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right" style="max-height: 800px; background:transparent;">
 
 
             <ul class="nav navbar-nav ">
@@ -712,7 +724,8 @@ a.drk {
 
               <div class="hero-content">
 								<div class="row">
-									<h1 class="hero-lead wow fadeInLeft MainFont col-lg-6" data-wow-duration="1.5s" style="color: #d1b205" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">Management Gala 2019</h1><br>
+									<!--<h1 class="hero-lead wow fadeInLeft MainFont col-lg-6" data-wow-duration="1.5s" style="color: #d1b205" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">Management Gala 2019</h1><br>-->
+									<img class="hero-lead wow fadeInLeft col-lg-6" data-wow-duration="1.5s" style="width: 45%; padding-top: 80px; color: #d1b205" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;" src="images/TitlePNGsmall.png">
 								</div>
 								<div class="row">
 									<h2 class="hero-lead wow fadeInLeft gala" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;"></h2>
@@ -800,7 +813,7 @@ a.drk {
 											 <!-- Video Link -->
 											 <div class="video-sec-content" style="position: relative;">
 												 <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeIn;">Promo Video</h3>
-												 <!--THE LINK --><a href="MESA1.mp4" class="play-btn popup-video">
+												 <!--THE LINK --><a href="" class="play-btn popup-video">
 													 <span class="play-icon">►</span>
 													 <h5>Play Video</h5>
 												 </a>
@@ -827,7 +840,7 @@ a.drk {
 									 <!-- Video Link -->
 									 <div class="video-sec-content" style="position: relative;">
 										 <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeIn;">Promo Video 2</h3>
-										 <!--THE LINK --><a href="MESA1.mp4" class="play-btn popup-video">
+										 <!--THE LINK --><a href="" class="play-btn popup-video">
 											 <span class="play-icon">►</span>
 											 <h5>Play Video</h5>
 										 </a>
@@ -854,7 +867,7 @@ a.drk {
 										 <!-- Video Link -->
 										 <div class="video-sec-content" style="position: relative;">
 											 <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeIn;">Promo Video 3</h3>
-											 <!--THE LINK --><a href="MESA1.mp4" class="play-btn popup-video">
+											 <!--THE LINK --><a href="" class="play-btn popup-video">
 												 <span class="play-icon">►</span>
 												 <h5>Play Video</h5>
 											 </a>
@@ -1327,20 +1340,20 @@ a.drk {
 
               <!-- Contact Form -->
               <div class="row">
-                <form action="http://mgmtgala.com/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
+								<form action="send_form_email.php" method="POST" id="contact-form-1" class="form-ajax">
                   <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
 
                     <!-- Name -->
                     <div class="form-group">
-											<label for="name-contact-1">Name</label>
-                      <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+											<label for="name">Name</label>
+                      <input type="text" name="name" id="name" class="form-control validate-locally" placeholder="Enter your name">
                       <span class="pull-right alert-error"></span>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
-                      <label for="email-contact-1">Email</label>
-                      <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" class="form-control validate-locally" placeholder="Enter your email">
                       <span class="pull-right alert-error"></span>
                     </div>
 
@@ -1350,8 +1363,8 @@ a.drk {
 
                     <!-- Message -->
                     <div class="form-group">
-												<label for="message-contact-1">Message</label>
-                      <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
+												<label for="message">Message</label>
+                      <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
                     </div>
                     <div>
                       <input type="submit" class="btn pull-right" value="Send Message">
