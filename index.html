@@ -178,10 +178,18 @@ a.drk {
 
 .main-demo-hero {
 
-	background-image: url("images/background.png") !important;
+	/* background-image: url("images/background.png") !important; */
 
 	background-size: cover !important;
 
+}
+
+.maincover{
+	background-image: url("images/background.png") !important;
+}
+
+.secondarycover{
+	background-image: url("images/sand.png") !important;
 }
 
 </style>
@@ -601,17 +609,48 @@ a.drk {
 		width: 75%;
 	}
 	.navbar.navbar-default {
-    background-color: #99ccff;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
+	    background-color: #99ccff;
+	    border: 0;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
 
-		.navbar.navbar-default .navbar-collapse {
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
+	.navbar.navbar-default .navbar-collapse {
+	    border: 0;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+
+	.ticketdiv {
+		position: relative;
+    z-index: 1;
+	}
+	.sand-bg {
+		position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('images/sand.png') center center;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+	}
+
+	.parallax{
+		background-image: url("images/sand.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	}
+
 </style>
 
 </head>
@@ -692,7 +731,7 @@ a.drk {
               <li class="SecFont"><a href="#tickets">Tickets<span class="sr-only"></span></a></li>
 
 
-              <li class="SecFont"><a href="#bts">Behind the Scenes<span class="sr-only"></span></a></li>
+              <!--<li class="SecFont"><a href="#bts">Behind the Scenes<span class="sr-only"></span></a></li>-->
 
 
               <li class="SecFont"><a href="#promo">Promotional Photos &amp; Videos<span class="sr-only"></span></a></li>
@@ -714,7 +753,7 @@ a.drk {
 
         <!-- ========== Hero Cover ========== -->
 
-        <div id="home" class="main-demo-hero">
+        <div id="home" class="maincover main-demo-hero">
 
           <div class="bg-overlay">
 
@@ -730,20 +769,20 @@ a.drk {
 								<div class="row">
 									<h2 class="hero-lead wow fadeInLeft gala" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;"></h2>
 								</div>
-	<!--time and address -->
-			<h4 class="h-alt hero-subheading wow fadeIn nomargin SecFont"
-			data-wow-duration="2s" data-wow-delay=".7s"
-			style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeIn;">
-			Friday March 29th, 2019
-			<br><br>5:30PM-12:00AM
-			<br><span style="font-size:12px">(Registration will take place from 5:00PM - 6:30PM
-			<br> and official event start is at 7:00PM)</span>
-			<!--&nbsp;&nbsp;|&nbsp;&nbsp;-->
-			<br><br>The Guild Inn Estate
-			<br>201 Guildwood Parkway
-			<br>Scarborough, ON
-			<br>M1E 1P5, Canada
-			</h4>
+								<!--time and address -->
+										<h4 class="h-alt hero-subheading wow fadeIn nomargin SecFont"
+										data-wow-duration="2s" data-wow-delay=".7s"
+										style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeIn;">
+										Friday March 29th, 2019
+										<br><br>5:30PM-12:00AM
+										<br><span style="font-size:12px">(Registration will take place from 5:00PM - 6:30PM
+										<br> and official event start is at 7:00PM)</span>
+										<!--&nbsp;&nbsp;|&nbsp;&nbsp;-->
+										<br><br>The Guild Inn Estate
+										<br>201 Guildwood Parkway
+										<br>Scarborough, ON
+										<br>M1E 1P5, Canada
+										</h4>
 
 
                 <a href="http://mgmtgala.com/#tickets" class="btn wow fadeIn" data-wow-duration="2s" data-wow-delay="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 1s; animation-name: fadeIn;">Buy Tickets</a>
@@ -784,8 +823,8 @@ a.drk {
 	    <div class="ws-l less"></div>
 
 	    <header class="sec-heading about">
-	      <h2 class="MainFont" style="font-size:28px">Welcome to Tropical Paradise</h2>
-	      <span class="subheading about">A tropical night awaits you</span>
+	      <h2 class="MainFont" style="font-size:28px">Let's Go to a Tropical Paradise</h2>
+	      <span class="subheading about">It's Time to Get Away</span>
 	    </header>
 
 
@@ -896,12 +935,12 @@ a.drk {
 		<div class="col-md-offset-1 col-md-10 text-center ws-m">
 
 
-			    <p class="SecFont" style="padding-top:20px; font-size:18px;">
-						<b>For the night where each and every one of you can “tropic like it’s hot”,
-						this event is one YOU wouldn’t want to miss as Management comes together to celebrate another AMAZING year!
-						</b>
-						<br><br> So shine those shoes, and put on your best dress as we’ll be seeing <b>YOU</b> dancing the night away!
-						<br><b>The Management and Economics Students’ Association</b> cordially invites you to:
+			    <p class="h-alt hero-subheading wow fadeIn nomargin SecFont" style="padding-top:20px; font-size:18px;">
+						<br>Come get away with us at a night full of incredible music,
+						a buffet meal, prestigious department awards, mind-blowing performances,
+						cocktail hour, and the return of the management gala open bar.
+						<br><br>Can’t wait to see you there!
+						<br><br><b>The Management and Economics Students’ Association</b> cordially invites you to:
 						<br><br><br><span class="MainFont" style="font-size:40px; color:#d1b205; word-spacing: .3em;"><b>Gala 2019: Tropical Paradise</b></span>
 						<br><br>A night full of marvelous music, prestigious department AWARDS, a picturesque photo booth, and mind-blowing performances.
 						Did we forget to mention a delectable all you can eat buffet, and to conclude this amazing evening… MESA is announcing the return of the OPEN BAR - this time a tiki bar!
@@ -916,133 +955,388 @@ a.drk {
 	</section><!-- / .section -->
 			</div>
 
+				<!-- ========== tickets ========== -->
+
+								<div id=tickets class="secondarycover parallax">
+
+									<div class="bg-overlay">
+										<!-- Hero Content -->
+
+										<div class="hero-content-wrapper ticketdiv">
+
+											<div class="hero-content ">
+												<section class="container section pricing-tables">
+
+													<header class="sec-heading">
+														<h2>Tickets</h2>
+														<span class="subheading">Join us in Paradise</span>
+													</header>
+
+													<div class="row">
+
+														<!-- Table 1 -->
+														<div class="col-md-4">
+															<div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+
+																<!-- Heading -->
+																<h4>Alumni</h4>
+																<div class="price">
+																	<span class="currency">$</span>
+																	<span class="value">55</span>
+																	<span class="type">CAD</span>
+																</div>
+																<p class="desc">For graduates of the University of Toronto Scarborough</p>
+																<hr>
+
+																<!-- Items -->
+																<ul class="p-items">
+																	<li><b>Incredible</b> Music</li>
+																	<li><b>Buffet</b> Course</li>
+																	<li><b>Prestigious</b> Department Awards</li>
+																	<li><b>Mind-Blowing</b> Performances</li>
+																	<li><b>In-House</b> Games, Raffle and Photobooth Hour</li>
+																	<li><b>Optional:</b> Open Bar $2.50 per Attendee</li>
+																</ul>
+																 <hr>
+
+																<a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
+															</div><!-- / .p-table -->
+														</div><!-- / .col-md-4 -->
+
+												<!-- Table 2 (featured) -->
+														<div class="col-md-4">
+															<div class="p-table pt-featured wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+
+																<!-- Star -->
+																<div class="banner">
+																	<span class="star">☆</span>
+																</div>
+
+																<!-- Header -->
+																<h4>Internal</h4>
+																<div class="price">
+																	<span class="currency">$</span>
+																	<span class="value">55</span>
+																	<span class="type">CAD</span>
+																</div>
+																<p class="desc">For students at the University of Toronto Scarborough</p>
+																<hr>
+
+																<!-- Items -->
+																<ul class="p-items">
+																	<li><b>Incredible</b> Music</li>
+																	<li><b>Buffet</b> Course</li>
+																	<li><b>Prestigious</b> Department Awards</li>
+																	<li><b>Mind-Blowing</b> Performances</li>
+																	<li><b>In-House</b> Games, Raffle and Photobooth Hour</li>
+																	<li><b>Optional:</b> Open Bar $2.50 per Attendee</li>
+																</ul>
+																 <hr>
+
+																<a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
+															</div><!-- / .p-table -->
+														</div><!-- / .col-md-4 -->
 
 
+														<!-- Table 3 -->
+														<div class="col-md-4">
+															<div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
 
-	<!-- ========== Tickets ========== -->
+																<!-- Header -->
+																<h4>Externals</h4>
+																<div class="price">
+																	<span class="currency">$</span>
+																	<span class="value">60</span>
+																	<span class="type">CAD</span>
+																</div>
+																<p class="desc">For attendees non-affiliated with the University of Toronto</p>
+																<hr>
 
-        <div id="tickets" class="gray-bg">
-          <section class="container section pricing-tables">
+																<!-- Items -->
+																<ul class="p-items">
+																	<li><b>Incredible</b> Music</li>
+																	<li><b>Buffet</b> Course</li>
+																	<li><b>Prestigious</b> Department Awards</li>
+																	<li><b>Mind-Blowing</b> Performances</li>
+																	<li><b>In-House</b> Games, Raffle and Photobooth Hour</li>
+																	<li><b>Optional:</b> Open Bar $2.50 per Attendee</li>
+																</ul>
+																 <hr>
 
-            <header class="sec-heading">
-              <h2>Tickets</h2>
-              <span class="subheading">Join us in Paradise</span>
-            </header>
+																<a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
+															</div><!-- / .p-table -->
+														</div><!-- / .col-md-4 -->
 
-            <div class="row">
+													</div><!-- / .row -->
 
-              <!-- Table 1 -->
-              <div class="col-md-4">
-                <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+													<div class="disclaimer">Alumni and Internal prices listed include a $5 Early Bird discount that ends March 15th, 11:55PM. Externals are not eligible for Early Bird. Transactions fees may apply.</div>
+												</section><!-- / .container -->
+												</div>
+											</div>
 
-                  <!-- Heading -->
-                  <h4>Alumni</h4>
-                  <div class="price">
-                    <span class="currency">$</span>
-                    <span class="value">50</span>
-                    <span class="type">CAD</span>
+										</div>
+										<!-- / .bg-overlay -->
+								</div>
+
+								<!-- / .main-hero-2 -->
+
+
+<!-- ========== FAQ ========== -->
+
+        <div id="faq" class="gray-bg">
+          <section class="container ft-cards" style="position: relative;">
+            <div class="row section">
+
+              <header class="sec-heading">
+                <h2>FAQs</h2>
+                <span class="subheading">Frequently Asked Questions</span>
+              </header>
+
+              <!-- Item 1 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                  <span class="numero">01</span>
+                  <h4>What is the dress code for this event?</h4>
+                  <p>The dress code for Management Gala is semi-formal attire.</p>
                   </div>
-                  <p class="desc">Special price for graduates of<br>University of Toronto Scarborough</p>
-                  <hr>
+              </div>
 
-                  <!-- Items -->
-                  <ul class="p-items">
-                    <li><b>Incredible</b> Music</li>
-                    <li><b>4-course</b> Meal</li>
-                    <li><b>Prestigious</b> Department Awards</li>
-                    <li><b>Mind-Blowing</b> Performances</li>
-                    <li><b>Cocktail</b> Hour</li>
-		    						<li><b>Open</b> Bar</li>
-                  </ul>
-                   <hr>
+              <!-- Item 2 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                  <span class="numero">02</span>
+                  <h4>When does early bird end?</h4>
+                  <p>Unfortunately, early bird tickets are no longer being sold at this time.</p>
+                </div>
+              </div>
 
-                  <a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
-                </div><!-- / .p-table -->
-              </div><!-- / .col-md-4 -->
+              <!-- Item 3 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                  <span class="numero">03</span>
+                  <h4>When is the last day to buy a ticket?</h4>
+                  <p>The absolute last day to buy tickets is Thursday, March 30 at 12:00pm!</p>
+                </div>
+              </div>
 
-<!-- Table 2 (featured) -->
-              <div class="col-md-4">
-                <div class="p-table pt-featured wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+              <!-- Item 4 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                  <span class="numero">04</span>
+                  <h4>Who can attend Management Gala?</h4>
+                  <p>Any of the following can attend: UTSC Students, External Students, Alumni, and Department of Management</p>
+                </div>
+              </div>
 
-                  <!-- Star -->
-                  <div class="banner">
-                    <span class="star">☆</span>
-                  </div>
+              <!-- Item 5 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                  <span class="numero">05</span>
+                  <h4>When and where is the event happening?</h4>
+                  <p>Scarborough Convention Centre (20 Torham Place, Toronto) on March 31st, 2017 from 5:30PM - 1:00AM</p>
+                </div>
+              </div>
 
-                  <!-- Header -->
-                  <h4>Regular</h4>
-                  <div class="price">
-                    <span class="currency">$</span>
-                    <span class="value">55</span>
-                    <span class="type">CAD</span>
-                  </div>
-                  <p class="desc">EXTENDED: Buy before<br>Thursday, March 30 at 12:00pm!</p>
-                  <hr>
-
-                  <!-- Items -->
-                  <ul class="p-items">
-                    <li><b>Incredible</b> Music</li>
-                    <li><b>4-course</b> Meal</li>
-                    <li><b>Prestigious</b> Department Awards</li>
-                    <li><b>Mind-Blowing</b> Performances</li>
-                    <li><b>Cocktail</b> Hour</li>
-		    						<li><b>Open</b> Bar</li>
-                  </ul>
-                   <hr>
-
-                  <a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
-                </div><!-- / .p-table -->
-              </div><!-- / .col-md-4 -->
-
-
-              <!-- Table 3 -->
-              <div class="col-md-4">
-                <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-
-                  <!-- Header -->
-                  <h4>Externals</h4>
-                  <div class="price">
-                    <span class="currency">$</span>
-                    <span class="value">55</span>
-                    <span class="type">CAD</span>
-                  </div>
-                  <p class="desc">For students outside<br>University of Toronto Scarborough</p>
-                  <hr>
-
-                  <!-- Items -->
-                  <ul class="p-items">
-                    <li><b>Incredible</b> Music</li>
-                    <li><b>4-course</b> Meal</li>
-                    <li><b>Prestigious</b> Department Awards</li>
-                    <li><b>Mind-Blowing</b> Performances</li>
-                    <li><b>Cocktail</b> Hour</li>
-		    						<li><b>Open</b> Bar</li>
-                  </ul>
-                   <hr>
-
-                  <a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
-                </div><!-- / .p-table -->
-              </div><!-- / .col-md-4 -->
+<!-- Item 6 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                  <span class="numero">06</span>
+                  <h4>Who should I contact if I have any more questions?</h4>
+                  <p>Please feel free to contact us at info@mgmtgala.com.</p>
+                </div>
+              </div>
 
             </div><!-- / .row -->
-
-		<div class="disclaimer">Please note: A $1 transaction fee will apply at checkout.</div>
-          </section><!-- / .container -->
+          </section>
         </div><!-- / .gray-bg -->
+
+
+
+
+        <!-- ========== Contact ========== -->
+
+        <section id="contact" class="section contact-1">
+
+          <header class="sec-heading">
+            <h2>Contact</h2>
+            <span class="subheading">Get all the party details</span>
+          </header>
+
+          <div class="contact-wrapper">
+
+            <!-- Map -->
+            <!--<iframe src="embed.html" width="100%" height="550px" frameborder="0" style="border:0; pointer-events: none;" scrolling="no" allowfullscreen=""></iframe>-->
+						<iframe width = "100%" height = "550px "src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11523.405388796615!2d-79.2577911!3d43.7759445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd147ec9870be00a3!2sScarborough+Town+Centre!5e0!3m2!1sen!2sca!4v1546413620935" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- Show Info Button -->
+            <div class="show-info-link">
+            <a href="http://mgmtgala.com/#" class="show-info">ⓘ &nbsp;<h6>Show info</h6></a>
+            </div>
+
+            <div class="container" style= "width: 100%">
+              <div class="row ws-s">
+
+                <!-- Address Info -->
+                <div class="col-xs-offset-1 col-xs-11 col-lg-6 col-md-6 contact-info-wrapper">
+                  <address>
+                    <div class="row">
+
+                      <!-- Address -->
+                      <div class="col-sm-5 address-group">
+                        <span>Address</span>
+                        <p>TO BE DECIDED</p>
+                      </div>
+
+								      <div class="col-sm-6 address-group">
+												<span>Venue</span>
+												<p>TO BE DECIDED</p>
+								      </div>
+
+                    </div><!-- / .row -->
+
+                    <div class="row">
+
+                      <!-- Email -->
+                      <div class="col-sm-5 address-group">
+                        <span>Email</span>
+                        <a href="mailto:gala@mesa.ca">gala@mesa.ca</a>
+                      </div>
+
+			<!-- Hours -->
+                      <div class="col-sm-6 address-group">
+                        <span>Event Hours</span>
+                        <p>5:30pm - 1:00am</p>
+												<p class="fsg">Doors Open:</p>
+												<p>5:00pm - 7:00pm</p>
+												<p class="fsg">Cocktail Hours:</p>
+												<p>5:30pm - 6:45pm</p>
+                      </div>
+
+                   </div><!-- / .row -->
+
+                    <!-- Show Map Button -->
+                    <div class="row show-map-link col-sm-5 address-group">
+                      <a href="http://mgmtgala.com/#" class="show-map drk" style="font-family: RaLaFu; font-size: 20px"><b>Show on map</b></a>
+                    </div><!-- / .row -->
+                  </address>
+                </div><!-- / .contact-info-wrapper -->
+              </div><!-- / .row -->
+
+              <!-- Contact Form -->
+              <div class="row">
+								<form action="send_form_email.php" method="POST" id="contact-form-1" class="form-ajax">
+                  <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+
+                    <!-- Name -->
+                    <div class="form-group">
+											<label for="name">Name</label>
+                      <input type="text" name="name" id="name" class="form-control validate-locally" placeholder="Enter your name">
+                      <span class="pull-right alert-error"></span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" class="form-control validate-locally" placeholder="Enter your email">
+                      <span class="pull-right alert-error"></span>
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+
+                    <!-- Message -->
+                    <div class="form-group">
+												<label for="message">Message</label>
+                      <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <div>
+                      <input type="submit" class="btn pull-right" value="Send Message">
+                    </div>
+
+                    <!-- Ajax Message -->
+                    <div class="ajax-message col-md-12 no-gap"></div>
+
+                  </div><!-- / .col-md-4 -->
+
+                </form>
+              </div><!-- / .row -->
+            </div><!-- / .container -->
+          </div><!-- / .contact-wrapper -->
+        </section><!-- / .contact-1 -->
+
+
+
+        <!-- ========== Footer ========== -->
+
+        <footer class="footer-widgets">
+
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-sm-6">
+                  <small>© 2019 Management and Economics Students' Association.<br>All rights reserved.</small>
+                </div>
+
+                <div class="col-sm-6">
+                  <small><a href="http://mgmtgala.com/#home" class="pull-right to-the-top">To the top ↑</a></small>
+                </div>
+
+              </div><!-- / .row -->
+            </div><!-- / .container -->
+          </div><!-- / .copyright -->
+
+        </footer><!-- / .footer-widgets -->
+
+
+
+        <!-- ========== Scripts ========== -->
+
+        <script src="jquery-2.1.4.min.js.download"></script>
+        <script src="google-fonts.js.download"></script>
+        <script src="jquery.easing.js.download"></script>
+        <script src="jquery.waypoints.min.js.download"></script>
+        <script src="bootstrap.min.js.download"></script>
+        <script src="bootstrap-hover-dropdown.min.js.download"></script>
+        <script src="smoothscroll.js.download"></script>
+        <script src="jquery.localScroll.min.js.download"></script>
+        <script src="jquery.scrollTo.min.js.download"></script>
+        <script src="jquery.stellar.min.js.download"></script>
+        <script src="jquery.parallax.js.download"></script>
+        <script src="slick.min.js.download"></script>
+        <script src="jquery.easypiechart.min.js.download"></script>
+        <script src="countup.min.js.download"></script>
+        <script src="isotope.min.js.download"></script>
+        <script src="jquery.magnific-popup.min.js.download"></script>
+        <script src="wow.min.js.download"></script>
+        <script src="jquery.mb.YTPlayer.min.js.download"></script>
+        <script src="jquery.ajaxchimp.js.download"></script>
+
+        <!-- Google Maps -->
+        <script src="gmap.js.download"></script>
+        <script type="text/javascript" src="js(1)"></script>
+
+        <!-- Definity JS -->
+        <script src="main.js.download"></script>
+        <script src="ajax-cf-1.js.download"></script>
+
+
+</div><div id="BDTLL_feedback"></div><div id="th-socket-state" running="false" style="display: none;"></div><div id="th-page-loaded"></div></body></html>
 
 
 	<!-- ========== Behind the Scenes ========== -->
 
-<!-- // Video // -->
+<!-- // Video //
 
 	<div id="bts">
         <div class="video-bg-section" style="position: relative;"><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><div id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;"></div></div><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><div id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;"></div></div><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><div id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;"></div></div><span id="controlBar_section-video" class="mb_YTPBar inlinePlayer compact" style="white-space: nowrap; position: absolute; z-index: 1000; display: inline-block;"><div class="buttonBar"><span class="mb_YTPPlaypause ytpicon">P</span><span class="mb_YTPMuteUnmute ytpicon">A</span><div class="mb_YTPVolumeBar simpleSlider muted" style="display: inline-block; cursor: auto;"><div class="level horizontal"></div></div><span class="mb_YTPTime">04 : 42 / 05 : 32</span><span class="mb_YTPUrl ytpicon" title="view on YouTube">Y</span><span class="mb_OnlyYT ytpicon">O</span></div><div class="mb_YTPProgress" style="position: absolute;"><div class="mb_YTPLoaded" style="position: absolute; left: 0px; width: 100%;"></div><div class="mb_YTPseekbar" style="position: absolute; left: 0px; width: 0px;"></div></div></span><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><video autoplay="" loop="" muted="" id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 1772.76px; height: 859px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -247px; margin-left: -211.88px; transition-property: opacity; transition-duration: 1000ms;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360"><source src="./build-day.mp4" type="video/mp4">Your broswer does not support video.</video><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
 
-          <!-- Video Background -->
+          <!-- Video Background - ->
           <div id="section-video" class="player mb_YTPlayer isMuted" data-property="{videoURL:&#39;./build-day.mp4&#39;,containment:&#39;.video-bg-section&#39;,autoPlay:false, mute:true, startAt:0, stopAt:10, opacity:1}" style="display: none; position: relative; background-image: none;">
           </div>
 
-          <!-- Video Link -->
+          <!-- Video Link - ->
           <div class="video-sec-content" style="position: relative;">
             <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeIn;">Behind the Scenes</h3>
             <a href="http://mgmtgala.com/build-day.mp4" class="play-btn popup-video">
@@ -1053,22 +1347,22 @@ a.drk {
 
         </div><!-- / .video-bg-section -->
 
-<!-- // Images // -->
+<!-- // Images // - ->
 
         <div class="video-bg-section" style="position: relative;"><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><div id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;"></div></div><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><div id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;"></div></div><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><div id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden;"></div></div><span id="controlBar_section-video" class="mb_YTPBar inlinePlayer compact" style="white-space: nowrap; position: absolute; z-index: 1000; display: inline-block;"><div class="buttonBar"><span class="mb_YTPPlaypause ytpicon">P</span><span class="mb_YTPMuteUnmute ytpicon">A</span><div class="mb_YTPVolumeBar simpleSlider muted" style="display: inline-block; cursor: auto;"><div class="level horizontal"></div></div><span class="mb_YTPTime">04 : 42 / 05 : 32</span><span class="mb_YTPUrl ytpicon" title="view on YouTube">Y</span><span class="mb_OnlyYT ytpicon">O</span></div><div class="mb_YTPProgress" style="position: absolute;"><div class="mb_YTPLoaded" style="position: absolute; left: 0px; width: 100%;"></div><div class="mb_YTPseekbar" style="position: absolute; left: 0px; width: 0px;"></div></div></span><div class="mbYTP_wrapper" id="wrapper_mbYTP_section-video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><video autoplay="" loop="" muted="" id="mbYTP_section-video" class="playerBox" style="position: absolute; z-index: 0; width: 1772.76px; height: 859px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -247px; margin-left: -211.88px; transition-property: opacity; transition-duration: 1000ms;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360"><source src="./dance.mp4" type="video/mp4">Your broswer does not support video.</video><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
 
-          <!-- Video Background -->
+          <!-- Video Background - ->
           <div id="section-video" class="player mb_YTPlayer isMuted" data-property="{videoURL:&#39;./dance.m4v&#39;,containment:&#39;.video-bg-section&#39;,autoPlay:false, mute:true, startAt:0, stopAt:10, opacity:1}" style="display: none; position: relative; background-image: none;">
           </div>
 
-          <!-- Video Link -->
+          <!-- Video Link - ->
           <div class="video-sec-content" style="position: relative;">
             <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeIn;">More from Behind the Scenes</h3>
             <a href="http://mgmtgala.com/dance.mp4" class="play-btn popup-video">
               <span class="play-icon">►</span>
               <h5>Play Video</h5>
             </a>
-          </div><!-- / .video-sec-content -->
+          </div><!-- / .video-sec-content - ->
 
 	<div id="promo" style="position: relative;"></div>
 
@@ -1196,247 +1490,114 @@ a.drk {
         </section><!- - / .portfolio-columns-fw -->
 
 
+<!-- ========== Tickets ========== - ->
 
-
-<!-- ========== FAQ ========== -->
-
-        <div id="faq" class="gray-bg">
-          <section class="container ft-cards">
-            <div class="row section">
-
-              <header class="sec-heading">
-                <h2>FAQs</h2>
-                <span class="subheading">Frequently Asked Questions</span>
-              </header>
-
-              <!-- Item 1 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
-                  <span class="numero">01</span>
-                  <h4>What is the dress code for this event?</h4>
-                  <p>The dress code for Management Gala is semi-formal attire.</p>
-                  </div>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-                  <span class="numero">02</span>
-                  <h4>When does early bird end?</h4>
-                  <p>Unfortunately, early bird tickets are no longer being sold at this time.</p>
-                </div>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
-                  <span class="numero">03</span>
-                  <h4>When is the last day to buy a ticket?</h4>
-                  <p>The absolute last day to buy tickets is Thursday, March 30 at 12:00pm!</p>
-                </div>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
-                  <span class="numero">04</span>
-                  <h4>Who can attend Management Gala?</h4>
-                  <p>Any of the following can attend: UTSC Students, External Students, Alumni, and Department of Management</p>
-                </div>
-              </div>
-
-              <!-- Item 5 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
-                  <span class="numero">05</span>
-                  <h4>When and where is the event happening?</h4>
-                  <p>Scarborough Convention Centre (20 Torham Place, Toronto) on March 31st, 2017 from 5:30PM - 1:00AM</p>
-                </div>
-              </div>
-
-<!-- Item 6 -->
-              <div class="col-lg-4 col-md-6 mb-sm-50">
-                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
-                  <span class="numero">06</span>
-                  <h4>Who should I contact if I have any more questions?</h4>
-                  <p>Please feel free to contact us at info@mgmtgala.com.</p>
-                </div>
-              </div>
-
-            </div><!-- / .row -->
-          </section>
-        </div><!-- / .gray-bg -->
-
-
-
-
-        <!-- ========== Contact ========== -->
-
-        <section id="contact" class="section contact-1">
+      <div id="tickets" class="ticketdiv">
+				<div class="sand-bg"></div>
+        <section class="container section pricing-tables">
 
           <header class="sec-heading">
-            <h2>Contact</h2>
-            <span class="subheading">Get all the party details</span>
+            <h2>Tickets</h2>
+            <span class="subheading">Join us in Paradise</span>
           </header>
 
-          <div class="contact-wrapper">
+          <div class="row">
 
-            <!-- Map -->
-            <!--<iframe src="embed.html" width="100%" height="550px" frameborder="0" style="border:0; pointer-events: none;" scrolling="no" allowfullscreen=""></iframe>-->
-						<iframe width = "100%" height = "550px "src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11523.405388796615!2d-79.2577911!3d43.7759445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd147ec9870be00a3!2sScarborough+Town+Centre!5e0!3m2!1sen!2sca!4v1546413620935" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <!-- Show Info Button -->
-            <div class="show-info-link">
-            <a href="http://mgmtgala.com/#" class="show-info">ⓘ &nbsp;<h6>Show info</h6></a>
-            </div>
+            <!-- Table 1 - ->
+            <div class="col-md-4">
+              <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
 
-            <div class="container" style= "width: 100%">
-              <div class="row ws-s">
+                <!-- Heading - ->
+                <h4>Alumni</h4>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="value">55</span>
+                  <span class="type">CAD</span>
+                </div>
+                <p class="desc">For graduates of the University of Toronto Scarborough</p>
+                <hr>
 
-                <!-- Address Info -->
-                <div class="col-xs-offset-1 col-xs-11 col-lg-6 col-md-6 contact-info-wrapper">
-                  <address>
-                    <div class="row">
+                <!-- Items - ->
+                <ul class="p-items">
+                  <li><b>Incredible</b> Music</li>
+                  <li><b>Buffet</b> Course</li>
+                  <li><b>Prestigious</b> Department Awards</li>
+                  <li><b>Mind-Blowing</b> Performances</li>
+                  <li><b>In-House</b> Games, Raffle and Photobooth Hour</li>
+	    						<li><b>Optional:</b> Open Bar $2.50 per Attendee</li>
+                </ul>
+                 <hr>
 
-                      <!-- Address -->
-                      <div class="col-sm-5 address-group">
-                        <span>Address</span>
-                        <p>TO BE DECIDED</p>
-                      </div>
+                <a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
+              </div><!-- / .p-table - ->
+            </div><!-- / .col-md-4 - ->
 
-								      <div class="col-sm-6 address-group">
-												<span>Venue</span>
-												<p>TO BE DECIDED</p>
-								      </div>
+<!-- Table 2 (featured) - ->
+            <div class="col-md-4">
+              <div class="p-table pt-featured wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
 
-                    </div><!-- / .row -->
-
-                    <div class="row">
-
-                      <!-- Email -->
-                      <div class="col-sm-5 address-group">
-                        <span>Email</span>
-                        <a href="mailto:info@mgmtgala.com">info@mgmtgala.com</a>
-                      </div>
-
-			<!-- Hours -->
-                      <div class="col-sm-6 address-group">
-                        <span>Event Hours</span>
-                        <p>5:30pm - 1:00am</p>
-												<p class="fsg">Doors Open:</p>
-												<p>5:00pm - 7:00pm</p>
-												<p class="fsg">Cocktail Hours:</p>
-												<p>5:30pm - 6:45pm</p>
-                      </div>
-
-                   </div><!-- / .row -->
-
-                    <!-- Show Map Button -->
-                    <div class="row show-map-link col-sm-5 address-group">
-                      <a href="http://mgmtgala.com/#" class="show-map drk" style="font-family: RaLaFu; font-size: 20px"><b>Show on map</b></a>
-                    </div><!-- / .row -->
-                  </address>
-                </div><!-- / .contact-info-wrapper -->
-              </div><!-- / .row -->
-
-              <!-- Contact Form -->
-              <div class="row">
-								<form action="send_form_email.php" method="POST" id="contact-form-1" class="form-ajax">
-                  <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
-
-                    <!-- Name -->
-                    <div class="form-group">
-											<label for="name">Name</label>
-                      <input type="text" name="name" id="name" class="form-control validate-locally" placeholder="Enter your name">
-                      <span class="pull-right alert-error"></span>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" name="email" id="email" class="form-control validate-locally" placeholder="Enter your email">
-                      <span class="pull-right alert-error"></span>
-                    </div>
-
-                  </div>
-
-                  <div class="col-md-4 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
-
-                    <!-- Message -->
-                    <div class="form-group">
-												<label for="message">Message</label>
-                      <textarea name="message" id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-                    </div>
-                    <div>
-                      <input type="submit" class="btn pull-right" value="Send Message">
-                    </div>
-
-                    <!-- Ajax Message -->
-                    <div class="ajax-message col-md-12 no-gap"></div>
-
-                  </div><!-- / .col-md-4 -->
-
-                </form>
-              </div><!-- / .row -->
-            </div><!-- / .container -->
-          </div><!-- / .contact-wrapper -->
-        </section><!-- / .contact-1 -->
-
-
-
-        <!-- ========== Footer ========== -->
-
-        <footer class="footer-widgets">
-
-          <!-- Copyright -->
-          <div class="copyright">
-            <div class="container">
-              <div class="row">
-
-                <div class="col-sm-6">
-                  <small>© 2019 Management and Economics Students' Association.<br>All rights reserved.</small>
+                <!-- Star - ->
+                <div class="banner">
+                  <span class="star">☆</span>
                 </div>
 
-                <div class="col-sm-6">
-                  <small><a href="http://mgmtgala.com/#home" class="pull-right to-the-top">To the top ↑</a></small>
+                <!-- Header - ->
+                <h4>Internal</h4>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="value">55</span>
+                  <span class="type">CAD</span>
                 </div>
+                <p class="desc">For students at the University of Toronto Scarborough</p>
+                <hr>
 
-              </div><!-- / .row -->
-            </div><!-- / .container -->
-          </div><!-- / .copyright -->
+                <!-- Items - ->
+                <ul class="p-items">
+									<li><b>Incredible</b> Music</li>
+                  <li><b>Buffet</b> Course</li>
+                  <li><b>Prestigious</b> Department Awards</li>
+                  <li><b>Mind-Blowing</b> Performances</li>
+                  <li><b>In-House</b> Games, Raffle and Photobooth Hour</li>
+	    						<li><b>Optional:</b> Open Bar $2.50 per Attendee</li>
+                </ul>
+                 <hr>
 
-        </footer><!-- / .footer-widgets -->
-
-
-
-        <!-- ========== Scripts ========== -->
-
-        <script src="jquery-2.1.4.min.js.download"></script>
-        <script src="google-fonts.js.download"></script>
-        <script src="jquery.easing.js.download"></script>
-        <script src="jquery.waypoints.min.js.download"></script>
-        <script src="bootstrap.min.js.download"></script>
-        <script src="bootstrap-hover-dropdown.min.js.download"></script>
-        <script src="smoothscroll.js.download"></script>
-        <script src="jquery.localScroll.min.js.download"></script>
-        <script src="jquery.scrollTo.min.js.download"></script>
-        <script src="jquery.stellar.min.js.download"></script>
-        <script src="jquery.parallax.js.download"></script>
-        <script src="slick.min.js.download"></script>
-        <script src="jquery.easypiechart.min.js.download"></script>
-        <script src="countup.min.js.download"></script>
-        <script src="isotope.min.js.download"></script>
-        <script src="jquery.magnific-popup.min.js.download"></script>
-        <script src="wow.min.js.download"></script>
-        <script src="jquery.mb.YTPlayer.min.js.download"></script>
-        <script src="jquery.ajaxchimp.js.download"></script>
-
-        <!-- Google Maps -->
-        <script src="gmap.js.download"></script>
-        <script type="text/javascript" src="js(1)"></script>
-
-        <!-- Definity JS -->
-        <script src="main.js.download"></script>
-        <script src="ajax-cf-1.js.download"></script>
+                <a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
+              </div><!-- / .p-table - ->
+            </div><!-- / .col-md-4 - ->
 
 
-</div><div id="BDTLL_feedback"></div><div id="th-socket-state" running="false" style="display: none;"></div><div id="th-page-loaded"></div></body></html>
+            <!-- Table 3 - ->
+            <div class="col-md-4">
+              <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+
+                <!-- Header - ->
+                <h4>Externals</h4>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="value">60</span>
+                  <span class="type">CAD</span>
+                </div>
+                <p class="desc">For attendees non-affiliated with the University of Toronto</p>
+                <hr>
+
+                <!-- Items - ->
+                <ul class="p-items">
+									<li><b>Incredible</b> Music</li>
+                  <li><b>Buffet</b> Course</li>
+                  <li><b>Prestigious</b> Department Awards</li>
+                  <li><b>Mind-Blowing</b> Performances</li>
+                  <li><b>In-House</b> Games, Raffle and Photobooth Hour</li>
+	    						<li><b>Optional:</b> Open Bar $2.50 per Attendee</li>
+                </ul>
+                 <hr>
+
+                <a href="http://buytickets.at/managementandeconomicsstudentsassociation" target="_blank" class="tix-link"><button class="btn-ghost">Buy Now</button></a>
+              </div><!-- / .p-table - ->
+            </div><!-- / .col-md-4 - ->
+
+          </div><!-- / .row - ->
+
+	<div class="disclaimer">Alumni and Internal prices listed include a $5 Early Bird discount that ends March 15th, 11:55PM. Externals are not eligible for Early Bird. Transactions fees may apply.</div>
+        </section><!-- / .container - ->
+      </div><!-- / .g -->

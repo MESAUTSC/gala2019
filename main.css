@@ -7865,7 +7865,7 @@ form .input-error-2:focus {
 }
 
 .main-demo-hero .bg-overlay, .fs-video-hero .bg-overlay, .fw-video-hero .bg-overlay, .text-slider-hero .bg-overlay, .freelancer-hero .bg-overlay, .agency2-hero .bg-overlay, .animated-hero .bg-overlay, .web-app-hero .bg-overlay {
-  position: absolute;
+
   width: 100%;
   height: 100vh;
   top: 0;
@@ -7875,7 +7875,6 @@ form .input-error-2:focus {
 
 .main-demo-hero .hero-content-wrapper, .fs-video-hero .hero-content-wrapper, .fw-video-hero .hero-content-wrapper, .text-slider-hero .hero-content-wrapper, .freelancer-hero .hero-content-wrapper, .agency2-hero .hero-content-wrapper, .animated-hero .hero-content-wrapper, .web-app-hero .hero-content-wrapper {
   display: table;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -7897,7 +7896,7 @@ form .input-error-2:focus {
 }
 
 .main-demo-hero .hero-content-wrapper .hero-content .hero-subheading, .fs-video-hero .hero-content-wrapper .hero-content .hero-subheading, .fw-video-hero .hero-content-wrapper .hero-content .hero-subheading, .text-slider-hero .hero-content-wrapper .hero-content .hero-subheading, .freelancer-hero .hero-content-wrapper .hero-content .hero-subheading, .agency2-hero .hero-content-wrapper .hero-content .hero-subheading, .animated-hero .hero-content-wrapper .hero-content .hero-subheading, .web-app-hero .hero-content-wrapper .hero-content .hero-subheading {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #000;
   font-weight: 550;
