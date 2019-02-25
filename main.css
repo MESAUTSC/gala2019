@@ -588,7 +588,6 @@ hr {
 
 .sec-heading .subheading {
   display: block;
-  text-transform: uppercase;
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
   color: #000;
